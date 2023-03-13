@@ -1,0 +1,9 @@
+mixin card(imageUrl, title, content, price)
+  .card
+    img(src="#{imageUrl}")
+    .card-text
+      h3= title
+      p= content
+    .card-price 
+      p= price
+      +button-S

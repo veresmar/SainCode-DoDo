@@ -1,0 +1,23 @@
+doctype html
+
+html
+  head
+    block meta
+    include mixins/all-mixins.pug
+    block stylesheets
+      link(rel='stylesheet', href='style/index.css')
+  
+  body
+    block header
+      include partials/header.pug
+      
+    main
+      block content      
+
+    
+    block footer 
+      include partials/footer.pug 
+     
+    
+    block javascripts
+      script(type='text/javascript')

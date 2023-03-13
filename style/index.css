@@ -7,4 +7,14 @@
   font-family: "Nunito", sans-serif;
 }
 
-/*# sourceMappingURL=index.css.map */
+.wrapper {
+  padding-top: 32px;
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+.button-S {
+  background-color: red;
+  width: 120px;
+  height: 40px;
+}/*# sourceMappingURL=index.css.map */
