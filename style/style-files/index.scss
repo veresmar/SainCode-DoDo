@@ -118,11 +118,6 @@ nav {
 
   &:hover {
     background-color: #F96900;
-    &::before {
-
-      content:'ds';
-      color: #FFFFFF;
-    }
   }
 
   span {   
@@ -132,7 +127,6 @@ nav {
 
     &:hover {
       color: #FFFFFF;
-      opacity:0;
     }
   }
 
