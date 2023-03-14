@@ -1,6 +1,6 @@
 mixin card-small(imageUrl, title, price)
   .card-small
-    img(src="#{imageUrl}")
+    img(src=imageUrl)
     .card-text
-      p= title
-      p= price
+      p.card-text-content= title
+      p.card-price= price

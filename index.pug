@@ -6,13 +6,73 @@ html
     include mixins/all-mixins.pug
     block stylesheets
       link(rel='stylesheet', href='style/index.css')
-  
+      link(rel="preconnect" href="https://fonts.googleapis.com")
+      link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+      link(href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet")
+
   body
-    block header
-      include partials/header.pug
-      
+    .wrapper
+      block header
+        .header
+          .logo-wrapper
+            include partials/logo-img.pug
+            include partials/logo-text.pug
+          .header_contact-wrapper
+            include partials/header-contact.pug
+        .header__nav-cart
+          include partials/nav.pug
+          +button-XS
+
+
     main
-      block content      
+      .wrapper
+        block content 
+          
+          section#new-and-popular-section
+            h2 Новое и популярное
+            .card-wrapper
+              +card-small('/style/img/small-card/1.png', 'Цезарь', 'от 445 ₽')
+              +card-small('/style/img/small-card/2.png', 'Нежный лосось', 'от 495 ₽')
+              +card-small('/style/img/small-card/3.png', '2 пиццы', '899 ₽')
+              +card-small('/style/img/small-card/4.png', 'Карбонара', 'от 395 ₽')
+          
+          section#pizza-section
+            h2 Пицца
+            .card-wrapper-grid
+              +card('/style/img/pizza-main/1.png', 'Пицца из половинок', 'Соберите свою пиццу 35 см с двумя разными вкусами', 'от 600 ₽', 'Собрать')
+              +card('/style/img/pizza-main/2.png', 'Пепперони-сердце', 'Пикантная пепперони, моцарелла, томатный соус', 'от 625 ₽', 'Выбрать')
+              +card('/style/img/pizza-main/3.png', 'Пирог-сердце', 'Ананасы, брусника, сгущенное молоко', 'от 625 ₽', 'Выбрать')
+              +card('/style/img/pizza-main/4.png', 'Чиззи чеддер', 'Ветчина, сыр чеддер, сладкий перец, моцарелла, томатный соус, чеснок, итальянские травы', 'от 625 ₽', 'Выбрать')
+              
+              +card('/style/img/pizza-main/5.png', 'Цыпленок блю чиз', 'Цыпленок, сыр блю чиз, томаты, моцарелла, соус альфредо', 'от 445 ₽', 'Выбрать')
+              +card('/style/img/pizza-main/6.png', 'Нежный лосось', 'Лосось, томаты черри, соус песто, моцарелла, соус альфредо', 'от 495 ₽', 'Выбрать')
+              +card('/style/img/pizza-main/7.png', 'Сырная', 'Увеличенная порция моцареллы, сыры чеддер и пармезан, соус альфредо', 'от 245 ₽', 'Выбрать')
+              +card('/style/img/pizza-main/8.png', 'Пепперони фреш', 'Пикантная пепперони, увеличенная порция моцареллы, томаты, томатный соус', 'от 245 ₽', 'Выбрать')
+          
+          section#combo-section
+            h2 Комбо
+            .card-wrapper-grid
+              +card('/style/img/combo/1.png', 'Комбо за 599 ₽', 'Наш хит «Аррива!» или другая пицца 25 см, Додстер, напиток и соус', '599 ₽', 'Собрать')
+              +card('/style/img/combo/2.png', '2 пиццы', 'Самое популярное комбо из 2 пицц 30 см. Большой выбор', '899 ₽', 'Собрать')
+              +card('/style/img/combo/3.png', '2 пиццы и закуска', '2 пиццы 25 см и закуска на выбор. Для компании из 2–4 человек', '799 ₽', 'Собрать')
+              +card('/style/img/combo/4.png', 'Пицца и 2 закуски', 'Пицца 30 см и 2 закуски на выбор. Для компании из 2–4 человек', '799 ₽', 'Собрать') 
+              +card('/style/img/combo/5.png', 'Комбо за 999 ₽', '3 пиццы 30 см на тонком тесте по суперцене. Выбор пицц ограничен', '999 ₽', 'Собрать')
+              
+          section#snacks-section
+            h2 Закуски
+            .card-wrapper-grid
+              +card('/style/img/snacks/1.png', 'Комбо за 599 ₽', 'Наш хит «Аррива!» или другая пицца 25 см, Додстер, напиток и соус', '599 ₽', 'Собрать')
+              +card('/style/img/snacks/2.png', '2 пиццы', 'Самое популярное комбо из 2 пицц 30 см. Большой выбор', '899 ₽', 'Собрать')
+              +card('/style/img/snacks/3.png', '2 пиццы и закуска', '2 пиццы 25 см и закуска на выбор. Для компании из 2–4 человек', '799 ₽', 'Собрать')
+              +card('/style/img/snacks/4.png', 'Пицца и 2 закуски', 'Пицца 30 см и 2 закуски на выбор. Для компании из 2–4 человек', '799 ₽', 'Собрать') 
+              +card('/style/img/snacks/5.png', 'Комбо за 999 ₽', '3 пиццы 30 см на тонком тесте по суперцене. Выбор пицц ограничен', '999 ₽', 'Собрать')
+              
+          section#desserts-section
+            h2 Десерты
+          section#drinks-section
+            h2 Напитки
+          section#others-section
+            h2
 
     
     block footer 
