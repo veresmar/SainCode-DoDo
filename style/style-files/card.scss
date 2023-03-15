@@ -65,6 +65,10 @@
   // min-height: 370px;
   // width: 100%;
 
+  p {
+    flex:1;
+  }
+
     @media (max-width:740px) {
       flex-direction:row;
       max-width: 440px;

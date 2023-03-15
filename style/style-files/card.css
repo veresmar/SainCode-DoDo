@@ -55,6 +55,9 @@
   flex-direction: column;
   align-items: flex-start;
 }
+.card p {
+  flex: 1;
+}
 @media (max-width: 740px) {
   .card {
     flex-direction: row;

@@ -1,12 +1,12 @@
 mixin card(imageUrl, title, content, price, buttonText)
   .card
     img(src=imageUrl)
-    .card-mobile
-      .card-text
-        h3= title
-        p.card-text-content= content
-      .card-price 
-        p.card-price-p 
-          =price
-        +button-S(buttonText)
+    //- .card-mobile
+    //-   .card-text
+    h3= title
+    p.card-text-content= content
+    .card-price 
+      p.card-price-p 
+        =price
+      +button-S(buttonText)
     
