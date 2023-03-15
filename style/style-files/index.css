@@ -117,4 +117,30 @@ nav li a:hover {
 }
 .button-S span:hover {
   color: #FFFFFF;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #464C55;
+  padding: 50px 110px 36px;
+  color: #FFFFFF;
+}
+
+.footer-b__logo-copyright {
+  display: flex;
+}
+.footer-b__logo-copyright p {
+  color: #FFFFFF;
+}
+
+.footer-b__links {
+  display: flex;
+}
+.footer-b__links a {
+  color: #FFFFFF;
+}
+
+.footer-b__socials {
+  display: flex;
 }/*# sourceMappingURL=index.css.map */

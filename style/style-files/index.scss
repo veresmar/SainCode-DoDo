@@ -1,3 +1,4 @@
+
 // - - - Common styles - - - 
 
 * {
@@ -78,6 +79,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   margin-bottom:3em;
+  
 }
 
 nav {
@@ -102,7 +104,7 @@ nav {
 
 .button-XS {
   width:104px;
-  height: 40px;
+  height:40px;
   background-color: #F96900;
 
   span {
@@ -130,4 +132,32 @@ nav {
     }
   }
 
+}
+
+// - - - footer
+
+.footer {
+  display: flex;
+  flex-direction:column;
+  background-color: #464C55;
+  padding: 50px 110px 36px;
+  color:#FFFFFF;
+}
+
+// - footer-bottom (logo, copyright, socials)
+
+.footer-b__logo-copyright {
+  display:flex;
+  p {
+    color:#FFFFFF;
+  }
+}
+.footer-b__links {
+  display: flex;
+  a {
+    color:#FFFFFF;
+  }
+}
+.footer-b__socials {
+  display: flex;
 }
