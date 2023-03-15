@@ -6,7 +6,12 @@ section h2 {
 }
 
 #new-and-popular-section {
-  padding-left: 5.6em;
+  padding-left: 170px;
+}
+@media (max-width: 1999px) {
+  #new-and-popular-section {
+    padding-left: 100px;
+  }
 }
 #new-and-popular-section h2 {
   margin-left: 0.8em;

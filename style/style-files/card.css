@@ -15,8 +15,21 @@
   padding: 14px 18px;
   margin-right: 20px;
 }
+@media (max-width: 1999px) {
+  .card-small {
+    width: 240px;
+    height: 108px;
+    margin-right: 10px;
+    padding: 0 3px 0 9px;
+  }
+}
 .card-small img {
   margin-right: 22px;
+}
+@media (max-width: 1999px) {
+  .card-small img {
+    margin-right: 7px;
+  }
 }
 .card-small p {
   margin-bottom: 4px;
@@ -29,16 +42,31 @@
   grid-column-gap: 20px;
   grid-row-gap: 60px;
 }
+@media (max-width: 740px) {
+  .card-wrapper-grid {
+    grid-row-gap: 16px;
+    grid-template-rows: max-content;
+    grid-template-columns: max-content;
+  }
+}
 
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
-  height: 100%;
-  max-height: 425px;
-  min-height: 370px;
-  width: 100%;
+}
+@media (max-width: 740px) {
+  .card {
+    flex-direction: row;
+    max-width: 440px;
+    border-bottom: 1px solid #F3F3F7;
+    align-items: normal;
+  }
+}
+@media (max-width: 740px) and (max-width: 740px) {
+  .card .button-S {
+    display: none;
+  }
 }
 .card .card-text {
   margin-bottom: 30px;
@@ -49,10 +77,31 @@
 .card img {
   padding: 0 15px;
 }
+@media (max-width: 740px) {
+  .card img {
+    padding: 0;
+    max-width: 180px;
+    height: auto;
+    margin-right: 7px;
+  }
+}
 .card .card-price {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 740px) {
+  .card .card-price {
+    flex-direction: column;
+  }
+}
+@media (max-width: 740px) {
+  .card .card-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
 }
 
 p.card-text-content {
@@ -62,10 +111,34 @@ p.card-text-content {
   color: #73798C;
   max-width: 224px;
 }
+@media (max-width: 740px) {
+  p.card-text-content {
+    font-size: 12px;
+  }
+}
 
 p.card-price-p {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   margin-right: 46px;
+}
+@media (max-width: 740px) {
+  p.card-price-p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 1000px;
+    padding: 7px 20px;
+    color: #D15700;
+    background-color: #FFF0E6;
+  }
+  p.card-price-p:hover {
+    background-color: #F96900;
+    color: #FFFFFF;
+  }
 }/*# sourceMappingURL=card.css.map */

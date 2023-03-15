@@ -5,7 +5,11 @@ section {
   }
 }
 #new-and-popular-section {
-  padding-left:5.6em;
+  // padding-left:5.6em;
+  padding-left: 170px;
+    @media (max-width:1999px) {
+    padding-left: 100px;
+    }
   h2 {
     margin-left:0.8em;
     margin-bottom: 30px;
