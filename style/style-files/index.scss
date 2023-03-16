@@ -1,3 +1,7 @@
+@import 'card';
+@import 'section';
+@import 'button';
+
 
 // - - - Common styles - - - 
 
@@ -27,11 +31,7 @@
     padding-right: 16px;
   }
 }
-.button {
-  border-radius: 1000px;
-  border: none;
-  cursor: pointer;
-}
+
 h2 {
   font-weight: 700;
   font-size: 24px;
@@ -111,39 +111,6 @@ nav {
 }
 
 
-//- - - Buttons - - - 
-
-.button-XS {
-  width:104px;
-  height:40px;
-  background-color: #F96900;
-
-  span {
-    font-size: 16px;
-    line-height: 22px;
-    color: #FFFFFF;
-  }
-}
-.button-S {
-  background-color:#FFF0E6;
-  width:120px;
-  height:40px;
-
-  &:hover {
-    background-color: #F96900;
-  }
-
-  span {   
-    font-size: 16px;
-    line-height: 22px;
-    color: #D15700;
-
-    &:hover {
-      color: #FFFFFF;
-    }
-  }
-
-}
 
 // - - - Footer - - - 
 

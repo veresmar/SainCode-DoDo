@@ -1,3 +1,205 @@
+.card-wrapper {
+  display: flex;
+  height: 9.5em;
+  padding-top: 1em;
+  padding-left: 1.2em;
+}
+
+.card-small {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 6px 25px rgba(6, 5, 50, 0.05);
+  border-radius: 10px;
+  width: 250px;
+  height: 104px;
+  padding: 14px 18px;
+  margin-right: 20px;
+}
+@media (max-width: 1999px) {
+  .card-small {
+    width: 240px;
+    height: 108px;
+    margin-right: 10px;
+    padding: 0 3px 0 9px;
+  }
+}
+.card-small img {
+  margin-right: 22px;
+}
+@media (max-width: 1999px) {
+  .card-small img {
+    margin-right: 7px;
+  }
+}
+.card-small p {
+  margin-bottom: 4px;
+}
+
+.card-wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(2, minmax(320px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 60px;
+}
+@media (max-width: 740px) {
+  .card-wrapper-grid {
+    grid-row-gap: 16px;
+    grid-template-rows: max-content;
+    grid-template-columns: max-content;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card p {
+  flex: 1;
+}
+@media (max-width: 740px) {
+  .card {
+    flex-direction: row;
+    max-width: 440px;
+    border-bottom: 1px solid #F3F3F7;
+    align-items: normal;
+  }
+}
+@media (max-width: 740px) and (max-width: 740px) {
+  .card .button-S {
+    display: none;
+  }
+}
+.card .card-text {
+  margin-bottom: 30px;
+}
+.card .card-text h3 {
+  margin-bottom: 10px;
+}
+.card img {
+  padding: 0 15px;
+}
+@media (max-width: 740px) {
+  .card img {
+    padding: 0;
+    max-width: 180px;
+    height: auto;
+    margin-right: 7px;
+  }
+}
+.card .card-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 740px) {
+  .card .card-price {
+    flex-direction: column;
+  }
+}
+@media (max-width: 740px) {
+  .card .card-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+}
+
+p.card-text-content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #73798C;
+  max-width: 224px;
+}
+@media (max-width: 740px) {
+  p.card-text-content {
+    font-size: 12px;
+  }
+}
+
+p.card-price-p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  margin-right: 46px;
+}
+@media (max-width: 740px) {
+  p.card-price-p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 1000px;
+    padding: 7px 20px;
+    color: #D15700;
+    background-color: #FFF0E6;
+  }
+  p.card-price-p:hover {
+    background-color: #F96900;
+    color: #FFFFFF;
+  }
+}
+
+section {
+  margin-bottom: 70px;
+}
+section h2 {
+  margin-bottom: 40px;
+}
+
+#new-and-popular-section {
+  padding-left: 170px;
+}
+@media (max-width: 1999px) {
+  #new-and-popular-section {
+    padding-left: 100px;
+  }
+}
+#new-and-popular-section h2 {
+  margin-left: 0.8em;
+  margin-bottom: 30px;
+}
+
+.button {
+  border-radius: 1000px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-XS {
+  width: 104px;
+  height: 40px;
+  background-color: #F96900;
+}
+.button-XS span {
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.button-S {
+  background-color: #FFF0E6;
+  width: 120px;
+  height: 40px;
+}
+.button-S:hover {
+  background-color: #F96900;
+}
+.button-S span {
+  font-size: 16px;
+  line-height: 22px;
+  color: #D15700;
+}
+.button-S span:hover {
+  color: #FFFFFF;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,12 +224,6 @@
     padding-left: 16px;
     padding-right: 16px;
   }
-}
-
-.button {
-  border-radius: 1000px;
-  border: none;
-  cursor: pointer;
 }
 
 h2 {
@@ -99,34 +295,6 @@ nav li {
 }
 nav li a:hover {
   color: #F96900;
-}
-
-.button-XS {
-  width: 104px;
-  height: 40px;
-  background-color: #F96900;
-}
-.button-XS span {
-  font-size: 16px;
-  line-height: 22px;
-  color: #FFFFFF;
-}
-
-.button-S {
-  background-color: #FFF0E6;
-  width: 120px;
-  height: 40px;
-}
-.button-S:hover {
-  background-color: #F96900;
-}
-.button-S span {
-  font-size: 16px;
-  line-height: 22px;
-  color: #D15700;
-}
-.button-S span:hover {
-  color: #FFFFFF;
 }
 
 .footer {
