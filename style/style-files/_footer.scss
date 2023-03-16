@@ -1,0 +1,245 @@
+
+
+// - - - Footer common - - - 
+
+.footer {
+  display: flex;
+  flex-direction:column;
+  background-color: #464C55;
+  padding: 50px 110px 36px;
+  color:#FFFFFF;
+}
+
+// - FOOTER-TOP (site-map, phone, info)
+
+.footer__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 93px;
+
+    @media (max-width:1183px) {
+      flex-direction: column;
+    }
+    @media (max-width:740px) {
+      margin-bottom: 20px;
+    }
+
+// - wrapper for lists of links
+
+  .footer__list-wrapper {
+    display: grid;
+    grid-template-columns: 137px 147px 154px 166px;
+    grid-template-rows: auto;
+    grid-gap:20px; 
+
+    @media (max-width:1183px) {
+      margin-bottom:30px;
+    }
+
+    @media (max-width:800px) {
+      grid-row-gap: 30px;
+      grid-template-rows: max-content;
+      grid-template-columns: max-content;
+      border-bottom: 1px solid #676c74;   
+    }
+    @media (max-width:740px) {
+      margin-bottom:20px;
+    }
+
+// - list of links 
+
+    .footer__link-list {
+      display:flex;
+      flex-direction: column;
+      line-height: 2.5em;
+
+      p {
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+      }
+
+      a {
+        color: #FFFFFF;
+        font-weight: 400;
+        opacity: 0.7;       
+      }
+
+      &:last-of-type {
+        @media (max-width:740px) {
+          margin-bottom:20px;
+        }
+      }
+    }
+  }
+}
+
+// - wrapper for wrappers with icons and contacts (look below)
+
+.footer__top-connect-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+
+  @media (max-width:740px) {
+    flex-direction: column-reverse; 
+    align-items: flex-start;
+  }
+}
+
+// - wrapper for Apple Store and Google Play
+
+.footer__top-app {
+  display: flex;
+  width:276px;
+  margin-bottom: 29px;
+  
+  svg {
+    margin-right: 5px;
+  }
+}
+
+// - wrapper for phone and email
+
+.footer__top-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  a {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    opacity: 0.9;
+
+    @media (max-width:740px) {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    
+    
+    &:first-of-type {
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 26px;
+      opacity: 1;
+      margin-bottom: 6px;
+
+      @media (max-width:740px) {
+        display: none;
+      }
+    }
+  }
+  p {
+    color: #FFFFFF;
+    opacity: 0.5;
+    font-size: 15px;
+    margin-bottom:26px;
+    
+    @media (max-width:740px) {
+      display: none;
+    }
+  }
+}
+
+// - wrapper for info about income and location
+
+.footer__top-info-wrapper {
+  display: flex;
+  margin-bottom: 40px;
+  
+  @media (max-width:740px) {
+    display:none;
+  }
+
+  .wrapper-info {
+    margin-right: 156px;
+
+    @media (max-width:740px) {
+      display: none;
+    }
+  }
+
+  .wrapper-location {
+    @media (max-width:740px) {
+      display: none;
+    }
+  }
+  .wrapper-info, .wrapper-location {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      opacity: 0.7;
+      color: #FFFFFF;
+
+      &:first-of-type {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 26px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+
+
+
+// - FOOTER-BOTTOM (logo, copyright, socials)
+
+.footer__bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top:40px;
+
+  @media (max-width:999px) {
+    flex-direction: column-reverse;
+  }
+  
+  .footer-b__logo-copyright {
+    display:flex;
+  
+    svg {
+      margin-right:28.3px;
+    }
+    p {
+      color:#FFFFFF;
+      opacity: 0.7;
+    }
+  }
+  .footer-b__links {
+    display: flex;
+    opacity: 0.7;
+  
+    a {
+      color:#FFFFFF;
+      margin-right:20px;
+    }
+    @media (max-width:1208px) {
+      flex-direction: column;
+    }
+    @media (max-width:740px) {
+      
+      margin-bottom:30px;
+    }
+    
+  }
+  .footer-b__socials {
+    display: flex;
+    a {
+      margin-right:6px;
+    }
+    
+    @media (max-width:740px) {
+      order: 1;
+      margin-bottom:30px;
+    }
+  }
+}

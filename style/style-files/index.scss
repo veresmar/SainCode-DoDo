@@ -1,6 +1,7 @@
 @import 'card';
 @import 'section';
 @import 'button';
+@import 'footer';
 
 
 // - - - Common styles - - - 
@@ -110,106 +111,3 @@ nav {
   }
 }
 
-
-
-// - - - Footer - - - 
-
-.footer {
-  display: flex;
-  flex-direction:column;
-  background-color: #464C55;
-  padding: 50px 110px 36px;
-  color:#FFFFFF;
-}
-
-// - footer-top (site-map, phone, info)
-
-.footer__top-wrapper {
-    @media (max-width:740px) {
-      margin-bottom: 20px;
-    }
-  .footer__list-wrapper {
-    display: grid;
-    grid-template-columns: 137px 147px 154px 166px;
-    grid-template-rows: auto;
-    grid-gap:20px; 
-
-    @media (max-width:800px) {
-      grid-row-gap: 30px;
-      grid-template-rows: max-content;
-      grid-template-columns: max-content;
-      
-    }
-
-    .footer__link-list {
-      display:flex;
-      flex-direction: column;
-      line-height: 2.5em;
-
-      a {
-        color: #FFFFFF;
-        font-weight: 400;
-        opacity: 0.7;
-
-        &:first-of-type {
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 26px;
-          opacity: 1; 
-        }
-      }
-    }
-  }
-}
-
-
-
-// - footer-bottom (logo, copyright, socials)
-
-.footer__bottom-wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-top:40px;
-
-  @media (max-width:999px) {
-    flex-direction: column;
-  }
-  
-  .footer-b__logo-copyright {
-    display:flex;
-  
-    svg {
-      margin-right:28.3px;
-    }
-    p {
-      color:#FFFFFF;
-      opacity: 0.7;
-    }
-  }
-  .footer-b__links {
-    display: flex;
-    opacity: 0.7;
-  
-    a {
-      color:#FFFFFF;
-      margin-right:20px;
-    }
-    @media (max-width:1208px) {
-      flex-direction: column;
-    }
-    @media (max-width:740px) {
-      order: 2;
-    }
-    
-  }
-  .footer-b__socials {
-    display: flex;
-    a {
-      margin-right:6px;
-    }
-    
-    @media (max-width:740px) {
-      order: 1;
-    }
-  }
-}
